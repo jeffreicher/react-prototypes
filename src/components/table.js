@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Table = () => {
+const Table = (props) => {
+    const tableRows = props.data.map();
     return (
         <table className="table">
             <thead className="thead-inverse">
