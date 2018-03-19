@@ -3,18 +3,18 @@ import Table from './table';
 
 const students = [
     {
-        student: John,
-        course: Math,
+        student: 'John',
+        course: 'Math',
         grade: 90
     },
     {
-        student: Jeff,
-        course: Science,
+        student: 'Jeff',
+        course: 'Science',
         grade: 100
     },
     {
-        student: Michael,
-        course: Art,
+        student: 'Michael',
+        course: 'Art',
         grade: 50
     }
 ];
