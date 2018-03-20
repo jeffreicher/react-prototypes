@@ -17,15 +17,17 @@ class Stopwatch extends Component {
 
     start(){
         const {start, elapsed} = this.state;
-        let newStart = new Date().getTime();
-        if(start){
-            newStart -= elapsed;
-        };
+        const newStart = new Date().getTime();
+        // if(start){
+        //     newStart -= elapsed;
+        // };
         this.setState({
             status: 'running',
-            start: newStart
+            start: start ? newStart - elapsed : newStart
         });
-        setTimeout(this.update, 10);
+        setTimeout(() => {
+            this.update();
+        }, 100);
     }
 
     stop(){
@@ -38,7 +40,7 @@ class Stopwatch extends Component {
         const {status, start} = this.state;
         if(status === 'running'){
             this.setState({
-                elapsed: (new Date().getTime() - start)
+                elapsed: new Date().getTime() - start
             });
             setTimeout(this.update, 10);
         }
