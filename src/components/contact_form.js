@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Field from './field';
 
 class ContactForm extends Component {
     constructor(props){
@@ -32,14 +33,7 @@ class ContactForm extends Component {
         const {firstName, lastName} = this.state.form;
         return(
             <form onSubmit={this.handleSubmit}>
-                <div className="form-group">
-                    <label>First Name:</label>
-                    <input type="text" className="form-control" name="firstName" value={firstName} onChange={this.handleInputChange} />
-                </div>
-                <div className="form-group">
-                    <label>Last Name:</label>
-                    <input type="text" className="form-control" name="lastName" value={lastName} onChange={this.handleInputChange} />
-                </div>
+                <Field name="firstName" label="First Name" type="text" value={firstName} onChange={this.handleInputChange} />
                 <button>Add Contact</button>
             </form>
         )
