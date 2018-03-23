@@ -1,7 +1,6 @@
 import React from 'react';
 
-export default props => {
-    console.log(props);   
+export default props => {  
     return (
         <div className="form-group">
             <label>{props.label}</label>
