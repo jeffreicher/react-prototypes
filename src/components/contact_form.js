@@ -15,9 +15,10 @@ class ContactForm extends Component {
         }
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.reset = this.reset.bind(this);
     }
 
-    handleInputChange(event){
+    handleInputChange(event) {
         const {value, name} = event.target;
         const {form} = this.state;
         form[name] = value;
@@ -26,10 +27,21 @@ class ContactForm extends Component {
         });
     }
 
-    handleSubmit(event){
+    handleSubmit(event) {
         event.preventDefault();
-        console.log('form:', this.state.form);
-        this.props.add(this.state.form)
+        this.props.add(this.state.form);
+        this.reset();
+    }
+
+    reset() {
+        this.setState({
+            form: {
+                firstName: '',
+                lastName: '',
+                phone: '',
+                email: ''
+            }
+        });
     }
 
     render(){
@@ -40,7 +52,8 @@ class ContactForm extends Component {
                 <Field name="lastName" label="Last Name" type="text" value={lastName} onChange={this.handleInputChange}/>
                 <Field name="phone" label="Phone Number" type="tel" value={phone} onChange={this.handleInputChange}/>
                 <Field name="email" label="Email" type="email" value={email} onChange={this.handleInputChange}/>
-                <button>Add Contact</button>
+                <button className="btn btn-outline-primary">Add Contact</button>
+                <button className="btn btn-outline-danger" type="button" onClick={this.reset}>Clear Form</button>
             </form>
         )
     }
