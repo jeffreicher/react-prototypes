@@ -11,7 +11,8 @@ export default [
     {
         src:Weed1,
         style:{
-            left: '5%',
+            bottom: '1%',
+            left: '15%',
             transform: 'rotate(-10deg)'
         }
     },
@@ -26,14 +27,14 @@ export default [
         src:Weed3,
         style:{
             right: '15%',
-            transform: 'rotate(-9deg)'
+            transform: 'rotate(10deg)'
         }
     },
     {
         src:Weed4,
         style:{
-            left: '8%',
-            top: '36%',
+            left: '36%',
+            top: '45%',
             transform: 'rotate(8deg)'
         }
     },
@@ -48,17 +49,16 @@ export default [
     {
         src:Weed6,
         style:{
-            right: '42%',
-            top: '31%',
+            right: '61%',
+            top: '6%',
             transform: 'rotate(10deg)'
         }
     },
     {
         src:Weed7,
-        style:{
-            left: '22%',
-            top: '52%',
-            transform: 'rotate(-5deg)'
+        style:{            
+            top: '4%',
+            transform: 'rotate(-15deg)'
         }
     },    
     {
