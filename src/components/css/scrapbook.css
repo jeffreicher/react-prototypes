@@ -6,6 +6,11 @@
 }
 
 .scrapbook-image {
+    position: absolute;
     width: 20%;
     border: 10px solid #fff;
+}
+
+.scrapbook-image:hover {
+    border:10px solid rgb(96, 183, 255);
 }
