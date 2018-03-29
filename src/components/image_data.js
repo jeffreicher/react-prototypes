@@ -1,15 +1,15 @@
-import Weed1 from './images/weed1.jpg';
-import Weed2 from './images/weed2.jpg';
-import Weed3 from './images/weed3.jpg';
-import Weed4 from './images/weed4.jpg';
-import Weed5 from './images/weed5.jpg';
-import Weed6 from './images/weed6.jpg';
-import Weed7 from './images/weed7.jpg';
-import Weed8 from './images/weed8.jpg';
+import Tree from './images/tree.jpg';
+import Tree2 from './images/tree2.jpg';
+import Tree3 from './images/tree3.jpg';
+import Tree4 from './images/tree4.jpg';
+import Tree5 from './images/tree5.jpg';
+import Tree6 from './images/tree6.png';
+import Tree7 from './images/tree7.jpg';
+import Tree8 from './images/tree8.png';
 
 export default [
     {
-        src:Weed1,
+        src:Tree,
         style:{
             bottom: '1%',
             left: '15%',
@@ -17,21 +17,21 @@ export default [
         }
     },
     {
-        src:Weed2,
+        src:Tree2,
         style:{
             left: '40%',
             transform: 'rotate(6deg)'
         }
     },
     {
-        src:Weed3,
+        src:Tree3,
         style:{
             right: '15%',
             transform: 'rotate(10deg)'
         }
     },
     {
-        src:Weed4,
+        src:Tree4,
         style:{
             left: '36%',
             top: '45%',
@@ -39,7 +39,7 @@ export default [
         }
     },
     {
-        src:Weed5,
+        src:Tree5,
         style:{
             right: '12%',
             top: '26%',
@@ -47,7 +47,7 @@ export default [
         }
     },
     {
-        src:Weed6,
+        src:Tree6,
         style:{
             right: '61%',
             top: '6%',
@@ -55,14 +55,14 @@ export default [
         }
     },
     {
-        src:Weed7,
+        src:Tree7,
         style:{            
             top: '4%',
             transform: 'rotate(-15deg)'
         }
     },    
     {
-        src:Weed8,
+        src:Tree8,
         style:{
             right: '22%',
             top: '62%',
